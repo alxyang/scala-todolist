@@ -16,3 +16,10 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-rjs" % "1.0.1")
 addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.0.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.0.0")
+
+libraryDependencies ++= Seq(
+  jdbc,
+  anorm,
+  cache,
+  "postgresql" % "postgresql" % "8.4-702.jdbc4"
+)
